@@ -1,3 +1,9 @@
+# revision 18833
+# category Package
+# catalog-ctan /macros/latex/contrib/iftex
+# catalog-date 2010-06-08 10:18:35 +0200
+# catalog-license lppl1.3
+# catalog-version 0.2
 Name:		texlive-iftex
 Version:	0.2
 Release:	1
@@ -43,6 +49,7 @@ or LuaTeX (respectively) is not the engine in use.
 %doc %{_texmfdistdir}/doc/generic/iftex/README
 %doc %{_texmfdistdir}/doc/generic/iftex/iftex.pdf
 %doc %{_texmfdistdir}/doc/generic/iftex/iftex.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -53,3 +60,5 @@ or LuaTeX (respectively) is not the engine in use.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
