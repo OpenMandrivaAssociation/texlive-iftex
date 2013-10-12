@@ -1,12 +1,12 @@
-# revision 18833
+# revision 29654
 # category Package
 # catalog-ctan /macros/latex/contrib/iftex
-# catalog-date 2010-06-08 10:18:35 +0200
+# catalog-date 2013-04-04 17:50:40 +0200
 # catalog-license lppl1.3
 # catalog-version 0.2
 Name:		texlive-iftex
 Version:	0.2
-Release:	2
+Release:	3
 Summary:	Am I running under pdfTeX, XeTeX or LuaTeX?
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/iftex
@@ -50,17 +50,3 @@ or LuaTeX (respectively) is not the engine in use.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.2-2
-+ Revision: 752726
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.2-1
-+ Revision: 718704
-- texlive-iftex
-- texlive-iftex
-- texlive-iftex
-- texlive-iftex
-
