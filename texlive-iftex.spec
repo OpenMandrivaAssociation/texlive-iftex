@@ -1,18 +1,12 @@
-# revision 29654
-# category Package
-# catalog-ctan /macros/latex/contrib/iftex
-# catalog-date 2013-04-04 17:50:40 +0200
-# catalog-license lppl1.3
-# catalog-version 0.2
 Name:		texlive-iftex
-Version:	0.2
-Release:	12
+Version:	61910
+Release:	1
 Summary:	Am I running under pdfTeX, XeTeX or LuaTeX?
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/iftex
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/iftex.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/iftex.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/iftex.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/iftex.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,23 +21,21 @@ also provides the \RequirePDFTeX, \RequireXeTeX, and
 or LuaTeX (respectively) is not the engine in use.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/generic/iftex/iftex.sty
-%doc %{_texmfdistdir}/doc/generic/iftex/README
-%doc %{_texmfdistdir}/doc/generic/iftex/iftex.pdf
-%doc %{_texmfdistdir}/doc/generic/iftex/iftex.tex
+%{_texmfdistdir}/tex/generic/iftex
+%doc %{_texmfdistdir}/doc/generic/iftex
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
