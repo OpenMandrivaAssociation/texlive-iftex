@@ -3,7 +3,7 @@ Version:	61910
 Release:	2
 Summary:	Am I running under pdfTeX, XeTeX or LuaTeX?
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/iftex
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/iftex
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/iftex.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/iftex.doc.r%{version}.tar.xz
