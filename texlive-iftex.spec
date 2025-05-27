@@ -1,6 +1,6 @@
 Name:		texlive-iftex
-Version:	61910
-Release:	2
+Version:	73115
+Release:	1
 Summary:	Am I running under pdfTeX, XeTeX or LuaTeX?
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/iftex
